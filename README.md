@@ -1,5 +1,15 @@
+## [Tutorial Link](https://www.youtube.com/watch?v=asB-dUwpH4Y)
+
 ## Setup Notes
 
+### Local setup
+
+```
+npm install
+gatsby develop
+```
+
+### Other notes
 1. All components ready to go (including imports)
 2. Use main.css - less imports
 3. Limit amount of components - better overview
