@@ -2,11 +2,17 @@
 
 ## Setup Notes
 
-### Local setup
+### Local Gatsby Setup
 
 ```
 npm install
-gatsby develop
+gatsby clean && gatsby develop
+```
+
+### Local Strapi Setup
+```
+npx create-strapi-app@3.6.8 cronit-strapi --quickstart
+npm run develop
 ```
 
 ### Other notes
