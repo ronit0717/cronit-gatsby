@@ -9,10 +9,36 @@ npm install
 gatsby clean && gatsby develop
 ```
 
-### Local Strapi Setup
+### Local Strapi (V3) Setup
 ```
 npx create-strapi-app@3.6.8 cronit-strapi --quickstart
 npm run develop
+```
+
+### Strapi Provider Upload Cloudinary
+[NPM package](https://www.npmjs.com/package/strapi-provider-upload-cloudinary)
+
+1. Install Package
+```
+npm i strapi-provider-upload-cloudinary
+```
+
+2. In strapi codebase, create a file ./config/plugins.js and add the following config
+```
+module.exports = {
+  upload: {
+    provider: 'cloudinary',
+    providerOptions: {
+      cloud_name: 'cloud_name',
+      api_key: 'api_key',
+      api_secret: 'api_secret',
+    },
+    actionOptions: {
+      upload: {},
+      delete: {},
+    },
+  },
+};
 ```
 
 ### Other notes
