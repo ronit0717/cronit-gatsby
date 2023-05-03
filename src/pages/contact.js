@@ -1,8 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const contact = () => {
   return <Layout>
+    <SEO 
+      title="Contact Me"
+      description="This is a contact me page for Ronit Chattopadhyay. Users can submit the form and send a message to Ronit Chattopadhyay"
+    />
     <section className="contact-page">
       <article className="contact-form">
         <h3>get in touch</h3>

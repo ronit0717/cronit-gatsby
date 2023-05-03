@@ -2,12 +2,16 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
-// ...GatsbyImageSharpFluid
+import SEO from "../components/SEO"
 
 const ProjectsPage = ({
   data: {allStrapiProject : {nodes:projects}}
 }) => {
   return <Layout>
+    <SEO 
+      title="Projects" 
+      description="This page lists down some of the significant projects Ronit Chattopadhyay has worked on"
+    />
     <section className="projects-page">
       <Projects projects={projects} title="all projects" />
     </section>

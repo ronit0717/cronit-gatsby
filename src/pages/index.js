@@ -2,10 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
-import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
+{/* import Services from "../components/Services" */}
 
 export default ({ data }) => {
   const {
@@ -13,21 +14,27 @@ export default ({ data }) => {
     allStrapiBlogLearn : { nodes: blogs} 
   } = data
 
-  return <Layout>
-    <Hero />
-    <Services />
-    <Jobs />
-    <Projects 
-      projects={projects} 
-      title="featured projects" 
-      showLink
-    />
-    <Blogs 
-      blogs={blogs}
-      title={"latest blogs"}
-      showLink
-    />
-  </Layout>
+  return (
+    <Layout>
+      <SEO 
+        title = "Home" 
+        description = "This is home page of the website CRONIT"
+      />
+      <Hero />
+      {/* <Services /> */}
+      <Jobs />
+      <Projects 
+        projects={projects} 
+        title="featured projects" 
+        showLink
+      />
+      <Blogs 
+        blogs={blogs}
+        title={"latest blogs"}
+        showLink
+      />
+    </Layout>
+  )
 }
 
 export const query = graphql`

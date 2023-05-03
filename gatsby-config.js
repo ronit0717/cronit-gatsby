@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "CRonit",
+    title: "CRONIT",
     description: "Personal website of Ronit Chattopadhyay",
     author: "Ronit Chattopadhyay",
     twitterUsername: "@cron_it",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://cronit.in",
   },
   plugins: [
     `gatsby-transformer-sharp`,
